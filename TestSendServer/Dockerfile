@@ -1,3 +1,9 @@
-FROM node:8
+FROM node:latest
+
+WORKDIR /app
+
+COPY . .
+
+CMD node SendServer.js
 
 
