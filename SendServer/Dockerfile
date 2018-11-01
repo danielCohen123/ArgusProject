@@ -6,4 +6,6 @@ COPY . .
 
 CMD node SendServer.js
 
+EXPOSE 80
+
 

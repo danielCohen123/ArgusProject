@@ -5,3 +5,5 @@ WORKDIR /app
 COPY . .
 
 CMD node GetServer.js
+
+EXPOSE 80
