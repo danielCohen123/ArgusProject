@@ -1,0 +1,4 @@
+GetServer/node_modules/
+SendServer/node_modules/
+GetServer/.idea/
+SendServer/.idea/
