@@ -1,8 +1,8 @@
 
-let express = require('express');
-let bodyParser = require('body-parser');
+const express = require('express');
+const bodyParser = require('body-parser');
 
-let app = express();
+const app = express();
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
@@ -20,12 +20,9 @@ app.get('/api/resource', function (req, res) {
     res.send(dataToPrint);
 });
 
+const server = app.listen(80, function () {
+    const host = server.address().address;
+    const port = server.address().port;
 
-
-
-let server = app.listen(80, function () {
-    let host = server.address().address;
-    let port = server.address().port;
-
-    console.log("Example app listening at http://%s:%s", host, port)
+    console.log(`Example app listening at http://${host}:${port}`)
 });
